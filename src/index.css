@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@plugin './hero.js';
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-main-100: #028899;
+  --color-main-200: #017684;
+  --color-main-300: #01606C;
+  --color-main-400: #00555F;
+  --font-family-cairo: "Cairo Variable", sans-serif;
+}
+@supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+}
