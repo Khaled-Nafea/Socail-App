@@ -49,16 +49,16 @@ export default function Login() {
   return (
     <>
     <div className="min-h-screen flex items-center justify-center">
-    <div className="w-full max-w-md mx-auto p-8 bg-gray-800/50 backdrop-blur-sm rounded-2xl shadow-2xl">
+    <div className="w-full max-w-md mx-auto p-8 bg-gray-100/50 backdrop-blur-sm rounded-2xl shadow-2xl">
       <header className="text-center mb-5">
         <h2 className="text-3xl font-bold mb-2">Login</h2>
         <p className="text-center">Don't have an account? <NavLink to="/register" className="text-primary">Sign Up</NavLink></p> 
       </header>
           <div className="flex gap-4 mb-6">
-            <button className="flex-1 flex items-center justify-center gap-3 border border-gray-600 hover:border-gray-500 px-4 py-3 rounded-lg bg-gray-700/30 hover:bg-gray-700/50 transition-all text-white">
+            <button className="flex-1 flex items-center justify-center  gap-3 border border-gray-600 hover:border-gray-500 px-4 py-3 rounded-lg bg-gray-200/30 hover:bg-gray-300/50 transition-all text-gray-700 cursor-pointer">
               <i className="fa-brands fa-google text-red-500"></i> Google
             </button>
-            <button className="flex-1 flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-700 px-4 py-3 rounded-lg transition-all text-white">
+            <button className="flex-1 flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-700 px-4 py-3 rounded-lg transition-all text-white cursor-pointer">
               <i className="fa-brands fa-facebook"></i> Facebook
             </button>
           </div>
