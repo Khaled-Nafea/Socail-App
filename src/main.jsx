@@ -8,13 +8,7 @@ import 'react-toastify/dist/ReactToastify.css'
 import '@fontsource-variable/cairo';
 import AuthContextProvider from './Context/AuthContext/AuthContext';
 import ProfileContextProvider from './Context/ProfileContext/ProfileContext.jsx';
-import {
-  useQuery,
-  useMutation,
-  useQueryClient,
-  QueryClient,
-  QueryClientProvider,
-} from '@tanstack/react-query'
+import {QueryClient,QueryClientProvider} from '@tanstack/react-query'
 
 const queryClient = new QueryClient()
 
