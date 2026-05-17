@@ -40,7 +40,7 @@ export default function Login() {
         toast.error("Invalid email or password");
       }
       else {
-        toast.error("Something went wrong");
+        toast.error("Invalid email or password");
       }
     }
   }

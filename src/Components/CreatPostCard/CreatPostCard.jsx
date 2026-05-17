@@ -49,7 +49,9 @@ useEffect(() => {
     try {
     setIsLading(true);
     const formData = new FormData();
-    formData.append("body", text);
+    if (text.trim().length > 0) {
+      formData.append("body", text);
+    }
    if (sentPhoto) {
       formData.append("image", sentPhoto);
     }

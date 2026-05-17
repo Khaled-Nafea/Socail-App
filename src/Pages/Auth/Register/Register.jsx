@@ -33,12 +33,18 @@ export default function Register() {
   });
 
   async function onSubmit(data) {
+    console.log(data);
     try {
       let result = await registerUser(data);
       toast.success(result.data.message);
       navigate("/login");
     } catch (error) {
-      toast.error(error.response.data.message);
+        if (error.response?.status === 401 || error.response?.status === 404) {
+        toast.error("Email already exists");
+      }
+      else {
+        toast.error("Email already exists");
+      }
     }
   }
 

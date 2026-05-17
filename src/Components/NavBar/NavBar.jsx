@@ -59,12 +59,13 @@ const {userProfile} = useContext(ProfileContext);
           </DropdownTrigger>
           <DropdownMenu aria-label="Profile Actions" variant="flat">
             <DropdownItem  key="profile" className="text-gray-600">
-            <NavLink to="/profile">
-              <i className="fa-solid fa-user"></i> Profile
-            </NavLink>
+             
+                <NavLink to="/profile" className="block">
+                  <i className="fa-solid fa-user"></i> Profile
+                </NavLink>
             </DropdownItem>
             <DropdownItem key="settings" className="text-gray-600">
-            <NavLink to="/settings">
+            <NavLink to="/settings" className="block">
               <i className="fa-solid fa-gear"></i> My Settings
             </NavLink>
             </DropdownItem>
